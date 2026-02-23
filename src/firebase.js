@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, signInAnonymously } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAggHqhiMpCpFBgP58hcw4GKYSwY4QmAd0",
-  authDomain: "vapour-fc8ad.firebaseapp.com",
-  projectId: "vapour-fc8ad",
-  storageBucket: "vapour-fc8ad.firebasestorage.app",
-  messagingSenderId: "1009334565582",
-  appId: "1:1009334565582:web:5031c0e15001dc5dcaee9f"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
@@ -25,4 +25,5 @@ signInAnonymously(auth)
   })
   .catch((error) => {
     console.error("Auth error:", error);
+
   });
