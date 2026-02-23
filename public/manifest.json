@@ -1,0 +1,16 @@
+{
+  "name": "Vapour",
+  "short_name": "Vapour",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "Anonymous private chat rooms that disappear when the conversation ends.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
